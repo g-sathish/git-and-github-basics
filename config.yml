@@ -1,0 +1,19 @@
+title: Git & GitHub Basics
+tagline: A brand new course on Learning Lab
+description: >-
+  This Course focuses on providing strong base to understand the fundamentals of
+  Git & GitHub.
+template:
+  repo: git-and-github-basics-template
+  name: git-and-github-basics
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
